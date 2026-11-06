@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Professional Portfolio With AI Help</title>
+<style>
+:root {
+  --ink: #1c2733; --muted: #5b6b7b; --line: #d9e1e8;
+  --accent: #0f6d5f; --accent-soft: #e8f3f1;
+  --warn: #9d3b12; --warn-bg: #fdf1e7; --warn-line: #e7b98f;
+  --code-bg: #f4f7f9;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; color: var(--ink);
+  font: 16px/1.6 Georgia, "Times New Roman", serif;
+  background: #fbfcfd;
+}
+.layout { display: flex; max-width: 1100px; margin: 0 auto; gap: 32px; padding: 24px; }
+main { flex: 1; min-width: 0; }
+nav.sidebar {
+  width: 220px; flex-shrink: 0;
+  font-family: Verdana, sans-serif; font-size: 13px;
+}
+nav.sidebar h2 {
+  font-size: 12px; letter-spacing: .08em; text-transform: uppercase;
+  color: var(--muted); margin: 0 0 8px;
+}
+nav.sidebar a {
+  display: block; padding: 5px 8px; border-radius: 4px;
+  color: var(--ink); text-decoration: none; margin-bottom: 2px;
+}
+nav.sidebar a:hover { background: var(--accent-soft); }
+nav.sidebar a.active { background: var(--accent); color: #fff; }
+.phisidebar {
+  background: var(--warn-bg); border: 1px solid var(--warn-line);
+  border-radius: 6px; padding: 14px 16px; margin: 0 0 20px;
+  font-family: Verdana, sans-serif; font-size: 13px;
+}
+.phisidebar h2 { margin: 0 0 8px; color: var(--warn); font-size: 14px; }
+.phisidebar ul { margin: 0; padding-left: 18px; }
+.phisidebar li { margin-bottom: 5px; }
+.phisidebar b { color: var(--warn); }
+.phisidebar a { color: var(--warn); }
+.banner {
+  background: var(--accent-soft); border-left: 4px solid var(--accent);
+  padding: 10px 14px; margin-bottom: 20px; border-radius: 0 6px 6px 0;
+  font-family: Verdana, sans-serif; font-size: 13px; color: var(--ink);
+}
+header.site { padding: 24px 24px 0; max-width: 1100px; margin: 0 auto; }
+header.site h1 { margin: 0; font-size: 26px; }
+header.site p { margin: 4px 0 12px; color: var(--muted); font-size: 14px; }
+h1, h2, h3, h4 { line-height: 1.25; font-weight: 700; }
+main h1 { font-size: 24px; margin-top: 8px; }
+main h2 { font-size: 19px; margin-top: 1.4em; border-bottom: 1px solid var(--line); padding-bottom: 3px; }
+main h3 { font-size: 16px; margin-top: 1.2em; }
+p, li { max-width: 70ch; }
+a { color: var(--accent); }
+code {
+  font-family: "SFMono-Regular", Consolas, monospace; font-size: .88em;
+  background: var(--code-bg); border: 1px solid var(--line);
+  border-radius: 3px; padding: 1px 4px;
+}
+pre {
+  background: var(--code-bg); border: 1px solid var(--line);
+  border-radius: 6px; padding: 12px 14px; overflow-x: auto;
+}
+pre code { background: none; border: none; padding: 0; }
+table { border-collapse: collapse; margin: 1em 0; font-size: 14px; max-width: 100%; display: block; overflow-x: auto; }
+th, td { border: 1px solid var(--line); padding: 6px 10px; text-align: left; vertical-align: top; }
+th { background: var(--accent-soft); font-family: Verdana, sans-serif; font-size: 12.5px; }
+blockquote {
+  margin: 1em 0; padding: 6px 14px; color: #3d4c5a;
+  border-left: 3px solid var(--accent); background: #f6faf9;
+  border-radius: 0 6px 6px 0; max-width: 70ch;
+}
+blockquote p { margin: .3em 0; }
+hr { border: none; border-top: 1px solid var(--line); margin: 1.6em 0; }
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 14px; padding: 0; list-style: none; }
+.cards li {
+  border: 1px solid var(--line); border-radius: 8px; padding: 14px 16px;
+  background: #fff; max-width: none;
+}
+.cards a { font-weight: 700; text-decoration: none; font-family: Verdana, sans-serif; font-size: 14px; }
+.cards p { margin: 6px 0 0; font-size: 14px; color: var(--muted); }
+footer {
+  text-align: center; color: var(--muted); font-size: 12.5px;
+  font-family: Verdana, sans-serif; padding: 18px 24px 28px;
+}
+@media (max-width: 760px) {
+  .layout { flex-direction: column; }
+  nav.sidebar { width: auto; }
+}
+
+</style>
+</head>
+<body>
+<header class="site">
+<h1>Professional Portfolio With AI Help</h1>
+<p>A healthcare-education manual for nurses — never medical advice. By Asdale Dynamics, LLC.</p>
+</header>
+<div class="layout">
+<nav class="sidebar"><h2>Manual</h2><a href="index.html" >Home</a><a href="00-read-me-first.html">Read Me First</a><a href="01-phi-safety.html">PHI Safety</a><a href="02-competency-sheets.html">Competency Sheets</a><a href="03-ceu-summaries.html">CEU Summaries</a><a href="04-preceptor-feedback.html" class="active">Preceptor Feedback Language</a><a href="05-credential-tracker.html">Credential Tracker</a><a href="06-annual-review.html">Annual-Review Talking Points</a><a href="07-ai-prompt-library.html">AI Prompt Library</a><a href="08-templates.html">Templates</a></nav>
+<main><div class="banner">Educational content only — this manual teaches documentation, organization, and professional communication. It is never medical advice; your facility policy and state board always outrank it.</div><div class="phisidebar"><h2>Do not include PHI</h2><p style="margin:0 0 8px">Before any content goes into a portfolio file, note, or AI prompt:</p><ul><li><b>Never include patient identifiers</b> — Names, initials, MRNs, dates of birth, room/bed numbers.</li>
+<li><b>Watch for identifying combinations</b> — A rare procedure + a date + a unit can point at one specific patient.</li>
+<li><b>Use roles instead of names</b> — “my preceptor,” “charge nurse” — never “Jane R. on 4 West.”</li>
+<li><b>No screenshots or photos of work</b> — EHR screenshots and printed MARs violate privacy outright.</li>
+<li><b>No secrets, ever</b> — Logins, badge numbers, API keys stay out of files and prompts.</li></ul><p style="margin:8px 0 0">Full rules: <a href="01-phi-safety.html">PHI Safety</a>.</p></div><h1 id="preceptor-feedback-language">Preceptor Feedback Language</h1>
+<p>Preceptor feedback is the most valuable — and most perishable — material in a portfolio. It is valuable because it is <em>somebody accountable noticing how you actually practice</em>. It is perishable because between "how'd the shift go?" and "can you write two sentences about my IV skills?" lies exactly one week.</p>
+<p>This chapter gives you language: how to <strong>ask for</strong> feedback, how to <strong>record</strong> it, and how to <strong>summarize</strong> a whole preceptorship without turning it into a case list. Feedback records talk about <em>your practice</em>, never <em>cases</em>, so this chapter is naturally low-PHI — careful with "the time I learned from Mrs. whatever" anecdotes anyway.</p>
+<blockquote><p><strong>Educational content only.</strong> Formal, written evaluations use your facility's language and rubric — those documents belong to HR, not to this template. What's here is the <em>informal</em> note-keeping layer that survives between official reviews.</p></blockquote>
+<h2 id="asking-say-it-once-simply">Asking (say it once, simply)</h2>
+<p>Most people fail to get feedback not because preceptors don't want to give it, but because the question is too big ("anything for me?"). Ask for one thing, at one moment:</p>
+<table>
+<thead><tr>
+<th>Moment</th>
+<th>What you can actually say</th>
+</tr></thead>
+<tbody>
+<tr><td>End of a shift block</td><td>"One thing I did well this block and one to sharpen?"</td></tr>
+<tr><td>After a specific skill</td><td>"How did that go compared to how you'd want it in six months?"</td></tr>
+<tr><td>Once per preceptorship</td><td>"I keep a growth record. Two sentences of feedback I can file, please?"</td></tr>
+<tr><td>When you're unsure</td><td>"Where are you guessing about my readiness, and what would settle it?"</td></tr>
+</tbody>
+</table>
+<p><strong>Why "two sentences I can file" works:</strong> it's small enough to be honest, and naming that you keep a record makes both of you take the two sentences seriously. Bring it up on day one, not day ten.</p>
+<h2 id="recording-the-feedback-card">Recording (the feedback card)</h2>
+<p>One card per feedback moment, 30 seconds to write:</p>
+<pre><code>Date (real — it&#x27;s your own record)
+Source: my ICU preceptor (role, not name, unless
+         they&#x27;ve ok&#x27;d being named)
+Context: end-of-shift check-in / after first solo
+         med pass / weekly one-on-one
+What they said (or the closest one-line version):
+  &quot;Slightly slow to call for help, great pattern of
+   saying what they&#x27;re thinking as it happens.&quot;
+My read: They want earlier escalation. That matches
+  what I noticed myself.
+Action: Tell the charge nurse a plan before problems,
+  not during.</code></pre>
+<p>Sanitize before filing: coworker names only with their permission; absolutely no case details in the "context" line — a skill happens, that's enough.</p>
+<h2 id="summarizing-a-preceptorship-the-shared-language-doc">Summarizing a preceptorship (the shared language doc)</h2>
+<p>Between evaluations, keep a one-page running summary the way the two of you cut up the work — numbered, plain, no individuals:</p>
+<pre><code class="language-markdown"># Preceptorship summary — ICU, 12 weeks, spring 2026
+
+*Assembled from weekly check-in records; no patient-specific content.*
+
+1. Built independent rhythm over the block: first two solo med passes,
+   then routine prioritization.
+2. Feedback trend: moved from &quot;look things up before asking&quot; to
+   &quot;thinking process is now consistent&quot; — kept both habits.
+3. Standing skill goals: UGPIV sign-off; ACLS megacode confidence.
+4. One sentence the preceptor said I should keep for reviews:
+   &quot;Moderates speed down and accuracy up during high-stress passes.&quot;</code></pre>
+<p>Notice: zero PHI, zero names, zero real dates that could re-identify — and it still reads like a real preceptorship happened.</p>
+<h2 id="the-ai-loop-for-feedback">The AI loop for feedback</h2>
+<ol><li>You paste your sanitized feedback cards into a prompt from <a href="07-ai-prompt-library.html#4-preceptor-feedback-prompts">07-ai-prompt-library.md</a>.</li><li>The AI <strong>clusters</strong> the cards into strengths/themes and finds the trend.</li><li>You read the AI's summary and <strong>correct anything false</strong> — AI is great at merging notes and terrible at knowing whether you actually improved.</li><li>You write the final summary <em>from the AI's draft</em> in your own voice.</li></ol>
+<p>Prompt input example (safe to type):</p>
+<blockquote><p>I have four short feedback notes from my preceptor over 12 weeks (no patient info, no names). Cluster them into 2–4 strengths and 1 common growth theme, and draft a one-paragraph summary I can file. Notes: [paste your cards]</p></blockquote>
+<h2 id="anti-patterns">Anti-patterns</h2>
+<ul><li>Collecting feedback and never reading it back — the <em>trend across cards</em> is the real gift; single cards are just weather.</li><li>Recording cases in the context line. "After handling a rapid-response in a post-op patient" tells a story. "After my first rapid-response" is all you need.</li><li>Copying formal HR evaluation language into your own file. Use your words.</li><li>Turning feedback into self-criticism. Feedback is data about <em>practice</em> patterns, not a verdict on you as a person.</li></ul>
+</main>
+</div>
+<footer>
+© 2026 Asdale Dynamics, LLC · Educational content, never medical advice ·
+CC0-style docs; site and code MIT licensed ·
+Built locally; no tracking, no network.
+</footer>
+</body>
+</html>

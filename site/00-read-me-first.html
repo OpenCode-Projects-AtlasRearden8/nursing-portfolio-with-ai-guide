@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Professional Portfolio With AI Help</title>
+<style>
+:root {
+  --ink: #1c2733; --muted: #5b6b7b; --line: #d9e1e8;
+  --accent: #0f6d5f; --accent-soft: #e8f3f1;
+  --warn: #9d3b12; --warn-bg: #fdf1e7; --warn-line: #e7b98f;
+  --code-bg: #f4f7f9;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; color: var(--ink);
+  font: 16px/1.6 Georgia, "Times New Roman", serif;
+  background: #fbfcfd;
+}
+.layout { display: flex; max-width: 1100px; margin: 0 auto; gap: 32px; padding: 24px; }
+main { flex: 1; min-width: 0; }
+nav.sidebar {
+  width: 220px; flex-shrink: 0;
+  font-family: Verdana, sans-serif; font-size: 13px;
+}
+nav.sidebar h2 {
+  font-size: 12px; letter-spacing: .08em; text-transform: uppercase;
+  color: var(--muted); margin: 0 0 8px;
+}
+nav.sidebar a {
+  display: block; padding: 5px 8px; border-radius: 4px;
+  color: var(--ink); text-decoration: none; margin-bottom: 2px;
+}
+nav.sidebar a:hover { background: var(--accent-soft); }
+nav.sidebar a.active { background: var(--accent); color: #fff; }
+.phisidebar {
+  background: var(--warn-bg); border: 1px solid var(--warn-line);
+  border-radius: 6px; padding: 14px 16px; margin: 0 0 20px;
+  font-family: Verdana, sans-serif; font-size: 13px;
+}
+.phisidebar h2 { margin: 0 0 8px; color: var(--warn); font-size: 14px; }
+.phisidebar ul { margin: 0; padding-left: 18px; }
+.phisidebar li { margin-bottom: 5px; }
+.phisidebar b { color: var(--warn); }
+.phisidebar a { color: var(--warn); }
+.banner {
+  background: var(--accent-soft); border-left: 4px solid var(--accent);
+  padding: 10px 14px; margin-bottom: 20px; border-radius: 0 6px 6px 0;
+  font-family: Verdana, sans-serif; font-size: 13px; color: var(--ink);
+}
+header.site { padding: 24px 24px 0; max-width: 1100px; margin: 0 auto; }
+header.site h1 { margin: 0; font-size: 26px; }
+header.site p { margin: 4px 0 12px; color: var(--muted); font-size: 14px; }
+h1, h2, h3, h4 { line-height: 1.25; font-weight: 700; }
+main h1 { font-size: 24px; margin-top: 8px; }
+main h2 { font-size: 19px; margin-top: 1.4em; border-bottom: 1px solid var(--line); padding-bottom: 3px; }
+main h3 { font-size: 16px; margin-top: 1.2em; }
+p, li { max-width: 70ch; }
+a { color: var(--accent); }
+code {
+  font-family: "SFMono-Regular", Consolas, monospace; font-size: .88em;
+  background: var(--code-bg); border: 1px solid var(--line);
+  border-radius: 3px; padding: 1px 4px;
+}
+pre {
+  background: var(--code-bg); border: 1px solid var(--line);
+  border-radius: 6px; padding: 12px 14px; overflow-x: auto;
+}
+pre code { background: none; border: none; padding: 0; }
+table { border-collapse: collapse; margin: 1em 0; font-size: 14px; max-width: 100%; display: block; overflow-x: auto; }
+th, td { border: 1px solid var(--line); padding: 6px 10px; text-align: left; vertical-align: top; }
+th { background: var(--accent-soft); font-family: Verdana, sans-serif; font-size: 12.5px; }
+blockquote {
+  margin: 1em 0; padding: 6px 14px; color: #3d4c5a;
+  border-left: 3px solid var(--accent); background: #f6faf9;
+  border-radius: 0 6px 6px 0; max-width: 70ch;
+}
+blockquote p { margin: .3em 0; }
+hr { border: none; border-top: 1px solid var(--line); margin: 1.6em 0; }
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 14px; padding: 0; list-style: none; }
+.cards li {
+  border: 1px solid var(--line); border-radius: 8px; padding: 14px 16px;
+  background: #fff; max-width: none;
+}
+.cards a { font-weight: 700; text-decoration: none; font-family: Verdana, sans-serif; font-size: 14px; }
+.cards p { margin: 6px 0 0; font-size: 14px; color: var(--muted); }
+footer {
+  text-align: center; color: var(--muted); font-size: 12.5px;
+  font-family: Verdana, sans-serif; padding: 18px 24px 28px;
+}
+@media (max-width: 760px) {
+  .layout { flex-direction: column; }
+  nav.sidebar { width: auto; }
+}
+
+</style>
+</head>
+<body>
+<header class="site">
+<h1>Professional Portfolio With AI Help</h1>
+<p>A healthcare-education manual for nurses — never medical advice. By Asdale Dynamics, LLC.</p>
+</header>
+<div class="layout">
+<nav class="sidebar"><h2>Manual</h2><a href="index.html" >Home</a><a href="00-read-me-first.html" class="active">Read Me First</a><a href="01-phi-safety.html">PHI Safety</a><a href="02-competency-sheets.html">Competency Sheets</a><a href="03-ceu-summaries.html">CEU Summaries</a><a href="04-preceptor-feedback.html">Preceptor Feedback Language</a><a href="05-credential-tracker.html">Credential Tracker</a><a href="06-annual-review.html">Annual-Review Talking Points</a><a href="07-ai-prompt-library.html">AI Prompt Library</a><a href="08-templates.html">Templates</a></nav>
+<main><div class="banner">Educational content only — this manual teaches documentation, organization, and professional communication. It is never medical advice; your facility policy and state board always outrank it.</div><div class="phisidebar"><h2>Do not include PHI</h2><p style="margin:0 0 8px">Before any content goes into a portfolio file, note, or AI prompt:</p><ul><li><b>Never include patient identifiers</b> — Names, initials, MRNs, dates of birth, room/bed numbers.</li>
+<li><b>Watch for identifying combinations</b> — A rare procedure + a date + a unit can point at one specific patient.</li>
+<li><b>Use roles instead of names</b> — “my preceptor,” “charge nurse” — never “Jane R. on 4 West.”</li>
+<li><b>No screenshots or photos of work</b> — EHR screenshots and printed MARs violate privacy outright.</li>
+<li><b>No secrets, ever</b> — Logins, badge numbers, API keys stay out of files and prompts.</li></ul><p style="margin:8px 0 0">Full rules: <a href="01-phi-safety.html">PHI Safety</a>.</p></div><h1 id="read-me-first">Read Me First</h1>
+<p><strong>Professional Portfolio With AI Help</strong> — a healthcare-education manual for registered nurses (and other healthcare workers) who want to build a working, hospital-safe professional portfolio with the help of AI tools.</p>
+<blockquote><p><strong>This manual is educational content, never medical advice.</strong> It teaches you how to document, organize, and <em>talk about</em> your own professional work. It does not teach clinical care, does not interpret your license or credentials, and cannot make decisions for you. Your nursing policy manual, your state board of nursing, your HR department, and your credentialed preceptor/manager always outrank anything written here. If any advice in this manual conflicts with your facility's policy, follow your facility's policy.</p></blockquote>
+<h2 id="what-this-manual-helps-you-build">What this manual helps you build</h2>
+<p>By the end, you will have a clean, reusable portfolio containing:</p>
+<table>
+<thead><tr>
+<th>Portfolio piece</th>
+<th>Doc</th>
+<th>What it's for</th>
+</tr></thead>
+<tbody>
+<tr><td>PHI safety checklist</td><td><a href="01-phi-safety.html">01-phi-safety.md</a></td><td>Sanitizing everything before it goes anywhere</td></tr>
+<tr><td>Competency sheets</td><td><a href="02-competency-sheets.html">02-competency-sheets.md</a></td><td>Documenting skills and check-offs</td></tr>
+<tr><td>CEU summaries</td><td><a href="03-ceu-summaries.html">03-ceu-summaries.md</a></td><td>Turning continuing education into organized, review-ready records</td></tr>
+<tr><td>Preceptor feedback language</td><td><a href="04-preceptor-feedback.html">04-preceptor-feedback.md</a></td><td>Asking for, recording, and summarizing feedback</td></tr>
+<tr><td>Credential tracker</td><td><a href="05-credential-tracker.html">05-credential-tracker.md</a></td><td>License/cert renewal dates at a glance</td></tr>
+<tr><td>Annual-review talking points</td><td><a href="06-annual-review.html">06-annual-review.md</a></td><td>Walking into your review prepared, not panicked</td></tr>
+<tr><td>AI prompt library</td><td><a href="07-ai-prompt-library.html">07-ai-prompt-library.md</a></td><td>Copy-paste prompts for every step above</td></tr>
+<tr><td>Fill-in templates</td><td><a href="08-templates.html">08-templates.md</a></td><td>Blank versions of everything, ready to use</td></tr>
+</tbody>
+</table>
+<h2 id="the-three-rules-of-this-manual">The three rules of this manual</h2>
+<ol><li><strong>Never put PHI (protected health information) in your portfolio, your prompts, or this project's files.</strong> See <a href="01-phi-safety.html">01-phi-safety.md</a>. This includes anything that could identify a patient, coworker, or facility — that means no names, no room numbers, no MRNs, no "you know the guy on 4 West" stories. Cartoonishly specific clinical anecdotes are out; sanitized "skill + setting + what I learned" summaries are in.</li><li><strong>Your portfolio describes <em>you</em>, not a patient.</strong> Every competency sheet, CEU summary, and talking point should pass one test: could I read this out loud in a hallway with the unit clerk, the charge nurse, and a visitor listening without anyone learning anything about a patient? If not, rewrite it.</li><li><strong>AI drafts, you verify.</strong> AI is great at restructuring your rough notes into a polished sheet. AI is <em>not</em> a source of truth for your license number, your CEU totals, your facility's policy, or anything clinical. Every AI-generated sentence about your career gets checked against a real document before it goes in the portfolio.</li></ol>
+<h2 id="what-not-to-include-the-short-list">What NOT to include (the short list)</h2>
+<p>Even sanitized entries must stay scrubbed of these. See <a href="01-phi-safety.html">01-phi-safety.md</a> for the full sidebar and examples.</p>
+<ul><li>Patient names or initials, MRNs, room/bed numbers, dates of birth</li><li>Any combination of details that could point to one specific patient</li><li>Coworker or preceptor <strong>names</strong> (use roles: "my ICU preceptor," "charge nurse")</li><li>Exact facility names where a story could land on someone (use "a metro ICU" or keep "my facility" — your employer knows where you work, they don't need your notes to prove it)</li><li>Badge/ID numbers, internal logins, screenshots of the EHR, printed work labels</li><li>Your own identifiers you don't need here (SSN, home address)</li></ul>
+<h2 id="how-to-use-this-with-ai-the-friendly-version">How to use this with AI (the friendly version)</h2>
+<p>This manual assumes you use a conversational AI assistant (a chat app, or a local model you run yourself) as a <strong>writing helper</strong> — like a friend with a red pen who never gets tired of restructuring a table.</p>
+<p>The pattern is always the same, in every chapter:</p>
+<ol><li><strong>You</strong> collect the raw, sanitized facts from your own records.</li><li><strong>You</strong> paste a sanitizer-checked summary into a prompt from <a href="07-ai-prompt-library.html">07-ai-prompt-library.md</a>.</li><li><strong>The AI</strong> reorganizes, tightens wording, formats a table, or drafts the summary.</li><li><strong>You</strong> verify every factual claim against the real source, sanitize again, and only then file it in your portfolio (Markdown file, printed sheet, or however your unit stores these).</li></ol>
+<p>That's it. No magic. The manual just applies that loop to six different portfolio jobs.</p>
+<h2 id="privacy-of-this-project-itself">Privacy of this project itself</h2>
+<p>Everything in this repository is template content — no real people, no real records, no secrets, no API keys. The build runs entirely on your machine with Python's standard library; nothing is sent anywhere. Load your own sanitized data before you start filling it in.</p>
+<h2 id="about">About</h2>
+<p>Built by <strong>Asdale Dynamics, LLC</strong> as part of its beginner-friendly AI education line. It sits between two sibling projects: it is <em>not</em> a job-hunting resume tool and <em>not</em> a first-year-new-nurse survival guide — it is the professional-portfolio manual that a nurse uses any time of year to keep evidence of their own growth organized, sanitized, and easy to talk about.</p>
+<p>MIT licensed. See <a href="../LICENSE">LICENSE</a>.</p>
+</main>
+</div>
+<footer>
+© 2026 Asdale Dynamics, LLC · Educational content, never medical advice ·
+CC0-style docs; site and code MIT licensed ·
+Built locally; no tracking, no network.
+</footer>
+</body>
+</html>

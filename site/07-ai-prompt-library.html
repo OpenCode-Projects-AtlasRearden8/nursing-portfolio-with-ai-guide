@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Professional Portfolio With AI Help</title>
+<style>
+:root {
+  --ink: #1c2733; --muted: #5b6b7b; --line: #d9e1e8;
+  --accent: #0f6d5f; --accent-soft: #e8f3f1;
+  --warn: #9d3b12; --warn-bg: #fdf1e7; --warn-line: #e7b98f;
+  --code-bg: #f4f7f9;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; color: var(--ink);
+  font: 16px/1.6 Georgia, "Times New Roman", serif;
+  background: #fbfcfd;
+}
+.layout { display: flex; max-width: 1100px; margin: 0 auto; gap: 32px; padding: 24px; }
+main { flex: 1; min-width: 0; }
+nav.sidebar {
+  width: 220px; flex-shrink: 0;
+  font-family: Verdana, sans-serif; font-size: 13px;
+}
+nav.sidebar h2 {
+  font-size: 12px; letter-spacing: .08em; text-transform: uppercase;
+  color: var(--muted); margin: 0 0 8px;
+}
+nav.sidebar a {
+  display: block; padding: 5px 8px; border-radius: 4px;
+  color: var(--ink); text-decoration: none; margin-bottom: 2px;
+}
+nav.sidebar a:hover { background: var(--accent-soft); }
+nav.sidebar a.active { background: var(--accent); color: #fff; }
+.phisidebar {
+  background: var(--warn-bg); border: 1px solid var(--warn-line);
+  border-radius: 6px; padding: 14px 16px; margin: 0 0 20px;
+  font-family: Verdana, sans-serif; font-size: 13px;
+}
+.phisidebar h2 { margin: 0 0 8px; color: var(--warn); font-size: 14px; }
+.phisidebar ul { margin: 0; padding-left: 18px; }
+.phisidebar li { margin-bottom: 5px; }
+.phisidebar b { color: var(--warn); }
+.phisidebar a { color: var(--warn); }
+.banner {
+  background: var(--accent-soft); border-left: 4px solid var(--accent);
+  padding: 10px 14px; margin-bottom: 20px; border-radius: 0 6px 6px 0;
+  font-family: Verdana, sans-serif; font-size: 13px; color: var(--ink);
+}
+header.site { padding: 24px 24px 0; max-width: 1100px; margin: 0 auto; }
+header.site h1 { margin: 0; font-size: 26px; }
+header.site p { margin: 4px 0 12px; color: var(--muted); font-size: 14px; }
+h1, h2, h3, h4 { line-height: 1.25; font-weight: 700; }
+main h1 { font-size: 24px; margin-top: 8px; }
+main h2 { font-size: 19px; margin-top: 1.4em; border-bottom: 1px solid var(--line); padding-bottom: 3px; }
+main h3 { font-size: 16px; margin-top: 1.2em; }
+p, li { max-width: 70ch; }
+a { color: var(--accent); }
+code {
+  font-family: "SFMono-Regular", Consolas, monospace; font-size: .88em;
+  background: var(--code-bg); border: 1px solid var(--line);
+  border-radius: 3px; padding: 1px 4px;
+}
+pre {
+  background: var(--code-bg); border: 1px solid var(--line);
+  border-radius: 6px; padding: 12px 14px; overflow-x: auto;
+}
+pre code { background: none; border: none; padding: 0; }
+table { border-collapse: collapse; margin: 1em 0; font-size: 14px; max-width: 100%; display: block; overflow-x: auto; }
+th, td { border: 1px solid var(--line); padding: 6px 10px; text-align: left; vertical-align: top; }
+th { background: var(--accent-soft); font-family: Verdana, sans-serif; font-size: 12.5px; }
+blockquote {
+  margin: 1em 0; padding: 6px 14px; color: #3d4c5a;
+  border-left: 3px solid var(--accent); background: #f6faf9;
+  border-radius: 0 6px 6px 0; max-width: 70ch;
+}
+blockquote p { margin: .3em 0; }
+hr { border: none; border-top: 1px solid var(--line); margin: 1.6em 0; }
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 14px; padding: 0; list-style: none; }
+.cards li {
+  border: 1px solid var(--line); border-radius: 8px; padding: 14px 16px;
+  background: #fff; max-width: none;
+}
+.cards a { font-weight: 700; text-decoration: none; font-family: Verdana, sans-serif; font-size: 14px; }
+.cards p { margin: 6px 0 0; font-size: 14px; color: var(--muted); }
+footer {
+  text-align: center; color: var(--muted); font-size: 12.5px;
+  font-family: Verdana, sans-serif; padding: 18px 24px 28px;
+}
+@media (max-width: 760px) {
+  .layout { flex-direction: column; }
+  nav.sidebar { width: auto; }
+}
+
+</style>
+</head>
+<body>
+<header class="site">
+<h1>Professional Portfolio With AI Help</h1>
+<p>A healthcare-education manual for nurses — never medical advice. By Asdale Dynamics, LLC.</p>
+</header>
+<div class="layout">
+<nav class="sidebar"><h2>Manual</h2><a href="index.html" >Home</a><a href="00-read-me-first.html">Read Me First</a><a href="01-phi-safety.html">PHI Safety</a><a href="02-competency-sheets.html">Competency Sheets</a><a href="03-ceu-summaries.html">CEU Summaries</a><a href="04-preceptor-feedback.html">Preceptor Feedback Language</a><a href="05-credential-tracker.html">Credential Tracker</a><a href="06-annual-review.html">Annual-Review Talking Points</a><a href="07-ai-prompt-library.html" class="active">AI Prompt Library</a><a href="08-templates.html">Templates</a></nav>
+<main><div class="banner">Educational content only — this manual teaches documentation, organization, and professional communication. It is never medical advice; your facility policy and state board always outrank it.</div><div class="phisidebar"><h2>Do not include PHI</h2><p style="margin:0 0 8px">Before any content goes into a portfolio file, note, or AI prompt:</p><ul><li><b>Never include patient identifiers</b> — Names, initials, MRNs, dates of birth, room/bed numbers.</li>
+<li><b>Watch for identifying combinations</b> — A rare procedure + a date + a unit can point at one specific patient.</li>
+<li><b>Use roles instead of names</b> — “my preceptor,” “charge nurse” — never “Jane R. on 4 West.”</li>
+<li><b>No screenshots or photos of work</b> — EHR screenshots and printed MARs violate privacy outright.</li>
+<li><b>No secrets, ever</b> — Logins, badge numbers, API keys stay out of files and prompts.</li></ul><p style="margin:8px 0 0">Full rules: <a href="01-phi-safety.html">PHI Safety</a>.</p></div><h1 id="ai-prompt-library">AI Prompt Library</h1>
+<p>Copy-paste starters for every chapter of this manual. Each prompt is <strong>sanitizer-safe by design</strong>: it only ever carries your <em>already- sanitized</em> notes, never PHI (see <a href="01-phi-safety.html">01-phi-safety.md</a>).</p>
+<p>How to use any prompt:</p>
+<ol><li>Sanitize your raw notes first. Names/patients/dates-of-battle never survive into the prompt.</li><li>Paste the prompt below into your AI chat (any mainstream assistant, or your own locally-run model — nothing here needs to leave your machine).</li><li><strong>Verify the output against a real source before you file it.</strong> AI drafts; your certificate, your check-off sheet, your preceptor's actual sentence are the records that count.</li><li>File the final version with the chapter it belongs to.</li></ol>
+<p>A shared line to append to almost every prompt:</p>
+<blockquote><p>No patient information is included in anything I paste — keep it that way.</p></blockquote>
+<h2 id="1-getting-started-prompts">1. Getting started prompts</h2>
+<p><strong>Set the assistant's job (paste once, at the top of a chat):</strong></p>
+<blockquote><p>You are my writing helper for a professional nursing portfolio. I am a nurse organizing competency sheets, CEU summaries, preceptor feedback, credentials, and annual-review talking points. Style: clear, honest, plain English, no medical-jargon padding, no invented facts. If I give you numbers, use them as-is and tell me if anything looks off. Never add facts I didn't give you. Assume everything I paste is already sanitized — and if I paste anything that looks like patient information, stop and tell me to sanitize first.</p></blockquote>
+<p><strong>Data hygiene check (run before most sessions):</strong></p>
+<blockquote><p>Here is what I plan to paste into a later message. Check it for anything that identifies a patient, coworker, or facility and tell me only what to remove or generalize. Paste: [your raw notes]</p></blockquote>
+<h2 id="2-competency-sheet-prompts">2. Competency-sheet prompts</h2>
+<p><strong>Build a sheet from rough notes:</strong></p>
+<blockquote><p>Turn these rough notes into a one-page competency sheet with these sections: Skill name, Category, Level (Introduced / Practicing / Independent / Experienced / Can teach), Verified by, Context, Strengths, Growth edge, Next step, Last updated. Keep my phrasing when it's already good. If a level I claimed sounds inconsistent with the notes, ask me rather than guess. Notes: [paste]</p></blockquote>
+<p><strong>Reflection-tightening:</strong></p>
+<blockquote><p>Here is the reflection part of a competency sheet: [paste]. Tighten it to two sentences, first person, honest tone, no buzzwords, no patient story. It should say what's solid and what I'm actively working on.</p></blockquote>
+<p><strong>Level ladder sanity check:</strong></p>
+<blockquote><p>I described this skill as [paste level + context]. Does that level wording match what I described? If not, suggest which of these fits better and why: Introduced, Practicing, Independent, Experienced, Can teach.</p></blockquote>
+<h2 id="3-ceu-summary-prompts">3. CEU-summary prompts</h2>
+<p><strong>Course notes → summary card + log row:</strong></p>
+<blockquote><p>Here are my rough notes from a continuing-education course (sanitized, no patient info). Turn them into: (a) a five-field summary card — Title &amp; provider, Date taken, Format, "3 things I learned," "How it changed me"; and (b) a single-row log entry: Date, Title, Provider, Hours, Category, 1-line takeaway. Keep each "thing I learned" to one line I could say out loud. Do not invent hours or a provider name I didn't give you. Notes: [paste]</p></blockquote>
+<p><strong>Theme my CEU year:</strong></p>
+<blockquote><p>From this CEU log, group my hours by category and tell me which two categories dominated my year. One short paragraph, no flattery. Log: [paste your log table]</p></blockquote>
+<p><strong>Compare to category plan:</strong></p>
+<blockquote><p>My category targets for this year: [categories + hour goals]. Here's my log to date: [paste]. Where am I on track, behind, or done? Plain table.</p></blockquote>
+<h2 id="4-preceptor-feedback-prompts">4. Preceptor-feedback prompts</h2>
+<p><strong>Cluster feedback cards:</strong></p>
+<blockquote><p>Here are my short preceptor-feedback cards from the past [N] weeks (sanitized — roles not names, no case details). Cluster them into 2–4 strengths and one recurring growth theme. Quote at most once, briefly. Cards: [paste]</p></blockquote>
+<p><strong>Draft a preceptorship summary:</strong></p>
+<blockquote><p>Using these clustered feedback notes, draft a one-page preceptorship summary in first person, four numbered points, no patient-specific content, no names. Tone: calm, factual, the kind of paragraph a manager who respects me would recognize. Notes: [paste] Notes: [paste]</p></blockquote>
+<p><strong>Turn awkward wording into a good ask:</strong></p>
+<blockquote><p>I want to say to my preceptor: "[your awkward draft]." Make it one calm, short request I would actually say out loud, asking for feedback I can file in my growth record. Give two versions: casual and slightly more formal.</p></blockquote>
+<h2 id="5-annual-review-prompts">5. Annual-review prompts</h2>
+<p><strong>Build the 4-layer script:</strong></p>
+<blockquote><p>Using the following sanitized material — competency updates [paste], CEU category totals [paste], feedback themes [paste], my one ask [paste], and my one goal [paste] — draft a four-part annual-review script, about 90 seconds each: Growth, Contribution, Learning, Next. Keep the ask concrete and one-sentence. No patient stories, no names, no invented metrics. If a claim has no evidence behind it in what I pasted, flag it instead of keeping it.</p></blockquote>
+<p><strong>Backup packet:</strong></p>
+<blockquote><p>Turn the same material into a one-page evidence table with rows: Growth, Contribution, Learning, Next, Credentials, Feedback trend; columns: Claim / Supporting evidence. Short cells, table format.</p></blockquote>
+<p><strong>Kinder, firmer ask line:</strong></p>
+<blockquote><p>Rewrite my ask — "[paste]" — so it is polite but unmistakably a request, with a clear what and a clear when. Two versions.</p></blockquote>
+<h2 id="6-utility-prompts">6. Utility prompts</h2>
+<p><strong>Sanitizer (use constantly):</strong></p>
+<blockquote><p>Scrub this text so it cannot identify a patient, coworker, or specific facility, keeping only skill, setting-type, and lesson. Show me before/after and list what you removed. Text: [paste]</p></blockquote>
+<p><strong>Plain-English rewrite for renewal pages:</strong></p>
+<blockquote><p>Rewrite this renewal-requirement text in plain English a busy nurse can act on: [paste text from the official issuer page]</p></blockquote>
+<p><strong>Backward planning:</strong></p>
+<blockquote><p>My credential expires on DATE and the renewal takes about [N] hours. Give me three dates: when to do the desk work, when to finish, and when to set a reminder. Show the steps between each.</p></blockquote>
+<h2 id="frequency-of-use-suggested-rhythm">Frequency of use (suggested rhythm)</h2>
+<table>
+<thead><tr>
+<th>cadence</th>
+<th>prompts you run</th>
+</tr></thead>
+<tbody>
+<tr><td>After any course (5 min)</td><td>#3 card + log row</td></tr>
+<tr><td>Each shift block with feedback (2 min)</td><td>#4 card or cluster</td></tr>
+<tr><td>Each new/level-up skill (10 min)</td><td>#2 sheet + reflection</td></tr>
+<tr><td>Quarterly desk ritual (20 min)</td><td>#5 review-draft (first pass) + #6 backward plan</td></tr>
+<tr><td>Annual review prep (one evening)</td><td>#5 script + packet + ask line</td></tr>
+</tbody>
+</table>
+<p>Nothing here is clever. That's the point — small, repeatable, sanitized loops that compound into a real portfolio.</p>
+</main>
+</div>
+<footer>
+© 2026 Asdale Dynamics, LLC · Educational content, never medical advice ·
+CC0-style docs; site and code MIT licensed ·
+Built locally; no tracking, no network.
+</footer>
+</body>
+</html>

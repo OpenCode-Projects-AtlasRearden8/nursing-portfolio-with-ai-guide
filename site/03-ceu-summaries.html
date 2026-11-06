@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Professional Portfolio With AI Help</title>
+<style>
+:root {
+  --ink: #1c2733; --muted: #5b6b7b; --line: #d9e1e8;
+  --accent: #0f6d5f; --accent-soft: #e8f3f1;
+  --warn: #9d3b12; --warn-bg: #fdf1e7; --warn-line: #e7b98f;
+  --code-bg: #f4f7f9;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; color: var(--ink);
+  font: 16px/1.6 Georgia, "Times New Roman", serif;
+  background: #fbfcfd;
+}
+.layout { display: flex; max-width: 1100px; margin: 0 auto; gap: 32px; padding: 24px; }
+main { flex: 1; min-width: 0; }
+nav.sidebar {
+  width: 220px; flex-shrink: 0;
+  font-family: Verdana, sans-serif; font-size: 13px;
+}
+nav.sidebar h2 {
+  font-size: 12px; letter-spacing: .08em; text-transform: uppercase;
+  color: var(--muted); margin: 0 0 8px;
+}
+nav.sidebar a {
+  display: block; padding: 5px 8px; border-radius: 4px;
+  color: var(--ink); text-decoration: none; margin-bottom: 2px;
+}
+nav.sidebar a:hover { background: var(--accent-soft); }
+nav.sidebar a.active { background: var(--accent); color: #fff; }
+.phisidebar {
+  background: var(--warn-bg); border: 1px solid var(--warn-line);
+  border-radius: 6px; padding: 14px 16px; margin: 0 0 20px;
+  font-family: Verdana, sans-serif; font-size: 13px;
+}
+.phisidebar h2 { margin: 0 0 8px; color: var(--warn); font-size: 14px; }
+.phisidebar ul { margin: 0; padding-left: 18px; }
+.phisidebar li { margin-bottom: 5px; }
+.phisidebar b { color: var(--warn); }
+.phisidebar a { color: var(--warn); }
+.banner {
+  background: var(--accent-soft); border-left: 4px solid var(--accent);
+  padding: 10px 14px; margin-bottom: 20px; border-radius: 0 6px 6px 0;
+  font-family: Verdana, sans-serif; font-size: 13px; color: var(--ink);
+}
+header.site { padding: 24px 24px 0; max-width: 1100px; margin: 0 auto; }
+header.site h1 { margin: 0; font-size: 26px; }
+header.site p { margin: 4px 0 12px; color: var(--muted); font-size: 14px; }
+h1, h2, h3, h4 { line-height: 1.25; font-weight: 700; }
+main h1 { font-size: 24px; margin-top: 8px; }
+main h2 { font-size: 19px; margin-top: 1.4em; border-bottom: 1px solid var(--line); padding-bottom: 3px; }
+main h3 { font-size: 16px; margin-top: 1.2em; }
+p, li { max-width: 70ch; }
+a { color: var(--accent); }
+code {
+  font-family: "SFMono-Regular", Consolas, monospace; font-size: .88em;
+  background: var(--code-bg); border: 1px solid var(--line);
+  border-radius: 3px; padding: 1px 4px;
+}
+pre {
+  background: var(--code-bg); border: 1px solid var(--line);
+  border-radius: 6px; padding: 12px 14px; overflow-x: auto;
+}
+pre code { background: none; border: none; padding: 0; }
+table { border-collapse: collapse; margin: 1em 0; font-size: 14px; max-width: 100%; display: block; overflow-x: auto; }
+th, td { border: 1px solid var(--line); padding: 6px 10px; text-align: left; vertical-align: top; }
+th { background: var(--accent-soft); font-family: Verdana, sans-serif; font-size: 12.5px; }
+blockquote {
+  margin: 1em 0; padding: 6px 14px; color: #3d4c5a;
+  border-left: 3px solid var(--accent); background: #f6faf9;
+  border-radius: 0 6px 6px 0; max-width: 70ch;
+}
+blockquote p { margin: .3em 0; }
+hr { border: none; border-top: 1px solid var(--line); margin: 1.6em 0; }
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 14px; padding: 0; list-style: none; }
+.cards li {
+  border: 1px solid var(--line); border-radius: 8px; padding: 14px 16px;
+  background: #fff; max-width: none;
+}
+.cards a { font-weight: 700; text-decoration: none; font-family: Verdana, sans-serif; font-size: 14px; }
+.cards p { margin: 6px 0 0; font-size: 14px; color: var(--muted); }
+footer {
+  text-align: center; color: var(--muted); font-size: 12.5px;
+  font-family: Verdana, sans-serif; padding: 18px 24px 28px;
+}
+@media (max-width: 760px) {
+  .layout { flex-direction: column; }
+  nav.sidebar { width: auto; }
+}
+
+</style>
+</head>
+<body>
+<header class="site">
+<h1>Professional Portfolio With AI Help</h1>
+<p>A healthcare-education manual for nurses — never medical advice. By Asdale Dynamics, LLC.</p>
+</header>
+<div class="layout">
+<nav class="sidebar"><h2>Manual</h2><a href="index.html" >Home</a><a href="00-read-me-first.html">Read Me First</a><a href="01-phi-safety.html">PHI Safety</a><a href="02-competency-sheets.html">Competency Sheets</a><a href="03-ceu-summaries.html" class="active">CEU Summaries</a><a href="04-preceptor-feedback.html">Preceptor Feedback Language</a><a href="05-credential-tracker.html">Credential Tracker</a><a href="06-annual-review.html">Annual-Review Talking Points</a><a href="07-ai-prompt-library.html">AI Prompt Library</a><a href="08-templates.html">Templates</a></nav>
+<main><div class="banner">Educational content only — this manual teaches documentation, organization, and professional communication. It is never medical advice; your facility policy and state board always outrank it.</div><div class="phisidebar"><h2>Do not include PHI</h2><p style="margin:0 0 8px">Before any content goes into a portfolio file, note, or AI prompt:</p><ul><li><b>Never include patient identifiers</b> — Names, initials, MRNs, dates of birth, room/bed numbers.</li>
+<li><b>Watch for identifying combinations</b> — A rare procedure + a date + a unit can point at one specific patient.</li>
+<li><b>Use roles instead of names</b> — “my preceptor,” “charge nurse” — never “Jane R. on 4 West.”</li>
+<li><b>No screenshots or photos of work</b> — EHR screenshots and printed MARs violate privacy outright.</li>
+<li><b>No secrets, ever</b> — Logins, badge numbers, API keys stay out of files and prompts.</li></ul><p style="margin:8px 0 0">Full rules: <a href="01-phi-safety.html">PHI Safety</a>.</p></div><h1 id="ceu-summaries">CEU Summaries</h1>
+<p>Continuing-education units are the rarest currency in a portfolio because they are hard to <em>retell</em> — you remember taking the module, not what it said. A <strong>CEU summary</strong> is a short, structured record that makes any course, module, or conference session retrievable in one glance, forever.</p>
+<p>CEU records are about <em>you</em>, so they are among the safest things in a portfolio — the only PHI risk is a case study inside a course description. Summarize the <em>lesson</em>, never the case.</p>
+<blockquote><p><strong>Educational content only.</strong> Whether a course counts toward renewal, how many contact hours a module is worth, and what your state board accepts is decided by your state board of nursing and your certifying body. Log what they say, not what a summary template implies.</p></blockquote>
+<h2 id="the-summary-card">The summary card</h2>
+<p>Five fields, one paragraph, no excuses:</p>
+<table>
+<thead><tr>
+<th>Field</th>
+<th>Filled example (sanitized)</th>
+</tr></thead>
+<tbody>
+<tr><td><strong>Title &amp; provider</strong></td><td>"Sepsis recognition in adults" — online module, ~2 contact hours (per provider)</td></tr>
+<tr><td><strong>Date taken</strong></td><td>2026-03-14</td></tr>
+<tr><td><strong>Format</strong></td><td>Self-paced online, with a post-test</td></tr>
+<tr><td><strong>3 things I learned</strong></td><td>(a) red-flag vitals trends beat single readings; (b) newest bundle emphasizes early-liberation practices; (c) when to escalate vs. recheck</td></tr>
+<tr><td><strong>How it changed me</strong></td><td>Added a trending-assessment habit to my shift routine; gave me language for running the next mock scenario</td></tr>
+</tbody>
+</table>
+<p>Keep "3 things I learned" to ≥3 bullet-sized phrases you could explain out loud in an elevator. If you can't produce three, you were attending, not learning — which is also useful information.</p>
+<h2 id="the-rolling-log-works-in-any-spreadsheet-or-markdown-table">The rolling log (works in any spreadsheet or Markdown table)</h2>
+<table>
+<thead><tr>
+<th>Date</th>
+<th>Title</th>
+<th>Provider</th>
+<th>Hours</th>
+<th>Category</th>
+<th>1-line takeaway</th>
+</tr></thead>
+<tbody>
+<tr><td>2026-03-14</td><td>Sepsis recognition</td><td>Online CE provider</td><td>2</td><td>Clinical</td><td>Trend vitals, escalate on bundle criteria</td></tr>
+<tr><td>2026-04-02</td><td>Delegation &amp; scope</td><td>Online CE provider</td><td>1</td><td>Professional</td><td>Delegate the task, keep the assessment</td></tr>
+<tr><td>2026-05-20</td><td>Precepting basics (unit course)</td><td>My facility's educator</td><td>4</td><td>Teaching</td><td>Ask what they noticed first; give one goal</td></tr>
+</tbody>
+</table>
+<p>See <a href="08-templates.html#ceu-log-templates">08-templates.md</a> for blank versions of this table and the card.</p>
+<h2 id="the-ai-loop-for-ceu-summaries">The AI loop for CEU summaries</h2>
+<ol><li><strong>Right after the course,</strong> you write 3–5 messy bullet points from the handout/notes — sanitized as always (<a href="01-phi-safety.html">01-phi-safety.md</a>).</li><li><strong>You prompt the AI</strong> (see <a href="07-ai-prompt-library.html#3-ceu-summary-prompts">07-ai-prompt-library.md</a>) to turn bullets into a five-field card and a one-row log entry.</li><li><strong>AI returns</strong> the structured summary, maybe a tighter "How it changed me."</li><li><strong>You verify:</strong> hours match the certificate, provider name spelled correctly, date accurate. <strong>The certificate is truth, not the AI.</strong></li></ol>
+<p>Worked prompt (yours to adapt):</p>
+<blockquote><p>Here are my rough notes from a continuing-education course (no patient info). Turn them into: a 5-field summary card (Title &amp; provider, Date, Format, 3 things I learned, How it changed me) plus a single-row log entry (Date, Title, Provider, Hours, Category, 1-line takeaway). Notes: 2 hr module on sepsis recognition from an online CE provider, taken this week; big idea was unifying trends over single readings, bundle criteria for escalation, and I want to add trend-assessment to my routine.</p></blockquote>
+<h2 id="categories-worth-assigning">Categories worth assigning</h2>
+<p>Use 4–5 that map to what your employer and board actually care about:</p>
+<ul><li><strong>Clinical</strong> (disease, procedures, safety bundles)</li><li><strong>Professional practice</strong> (ethics, delegation, documentation)</li><li><strong>Leadership/teaching</strong> (precepting, charge prep)</li><li><strong>Technology</strong> (EHR skills, informatics)</li><li><strong>Wellbeing &amp; resilience</strong> (stress, fatigue, healthy shift patterns)</li></ul>
+<p>Two categories per year usually dominate; both counts and categories read well when your annual review asks "what did you learn this year?" — see <a href="06-annual-review.html">06-annual-review.md</a>.</p>
+<h2 id="anti-patterns">Anti-patterns</h2>
+<ul><li>Logging only when renewal season forces you. A 5-minute ritual after each course keeps the log real.</li><li>Copying the course abstract as your takeaway — you should sound like a person who <em>did</em> the training, not a brochure.</li><li>Inventing hours, saving a screenshot of the certificate and calling it done — file the PDF AND a card; screenshots of certificates belong in your own private records folder, not in a portfolio you share.</li><li>Putting real case details from a course's example patient into your card. Summarize the concept, not the case.</li></ul>
+</main>
+</div>
+<footer>
+© 2026 Asdale Dynamics, LLC · Educational content, never medical advice ·
+CC0-style docs; site and code MIT licensed ·
+Built locally; no tracking, no network.
+</footer>
+</body>
+</html>

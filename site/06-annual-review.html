@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Professional Portfolio With AI Help</title>
+<style>
+:root {
+  --ink: #1c2733; --muted: #5b6b7b; --line: #d9e1e8;
+  --accent: #0f6d5f; --accent-soft: #e8f3f1;
+  --warn: #9d3b12; --warn-bg: #fdf1e7; --warn-line: #e7b98f;
+  --code-bg: #f4f7f9;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; color: var(--ink);
+  font: 16px/1.6 Georgia, "Times New Roman", serif;
+  background: #fbfcfd;
+}
+.layout { display: flex; max-width: 1100px; margin: 0 auto; gap: 32px; padding: 24px; }
+main { flex: 1; min-width: 0; }
+nav.sidebar {
+  width: 220px; flex-shrink: 0;
+  font-family: Verdana, sans-serif; font-size: 13px;
+}
+nav.sidebar h2 {
+  font-size: 12px; letter-spacing: .08em; text-transform: uppercase;
+  color: var(--muted); margin: 0 0 8px;
+}
+nav.sidebar a {
+  display: block; padding: 5px 8px; border-radius: 4px;
+  color: var(--ink); text-decoration: none; margin-bottom: 2px;
+}
+nav.sidebar a:hover { background: var(--accent-soft); }
+nav.sidebar a.active { background: var(--accent); color: #fff; }
+.phisidebar {
+  background: var(--warn-bg); border: 1px solid var(--warn-line);
+  border-radius: 6px; padding: 14px 16px; margin: 0 0 20px;
+  font-family: Verdana, sans-serif; font-size: 13px;
+}
+.phisidebar h2 { margin: 0 0 8px; color: var(--warn); font-size: 14px; }
+.phisidebar ul { margin: 0; padding-left: 18px; }
+.phisidebar li { margin-bottom: 5px; }
+.phisidebar b { color: var(--warn); }
+.phisidebar a { color: var(--warn); }
+.banner {
+  background: var(--accent-soft); border-left: 4px solid var(--accent);
+  padding: 10px 14px; margin-bottom: 20px; border-radius: 0 6px 6px 0;
+  font-family: Verdana, sans-serif; font-size: 13px; color: var(--ink);
+}
+header.site { padding: 24px 24px 0; max-width: 1100px; margin: 0 auto; }
+header.site h1 { margin: 0; font-size: 26px; }
+header.site p { margin: 4px 0 12px; color: var(--muted); font-size: 14px; }
+h1, h2, h3, h4 { line-height: 1.25; font-weight: 700; }
+main h1 { font-size: 24px; margin-top: 8px; }
+main h2 { font-size: 19px; margin-top: 1.4em; border-bottom: 1px solid var(--line); padding-bottom: 3px; }
+main h3 { font-size: 16px; margin-top: 1.2em; }
+p, li { max-width: 70ch; }
+a { color: var(--accent); }
+code {
+  font-family: "SFMono-Regular", Consolas, monospace; font-size: .88em;
+  background: var(--code-bg); border: 1px solid var(--line);
+  border-radius: 3px; padding: 1px 4px;
+}
+pre {
+  background: var(--code-bg); border: 1px solid var(--line);
+  border-radius: 6px; padding: 12px 14px; overflow-x: auto;
+}
+pre code { background: none; border: none; padding: 0; }
+table { border-collapse: collapse; margin: 1em 0; font-size: 14px; max-width: 100%; display: block; overflow-x: auto; }
+th, td { border: 1px solid var(--line); padding: 6px 10px; text-align: left; vertical-align: top; }
+th { background: var(--accent-soft); font-family: Verdana, sans-serif; font-size: 12.5px; }
+blockquote {
+  margin: 1em 0; padding: 6px 14px; color: #3d4c5a;
+  border-left: 3px solid var(--accent); background: #f6faf9;
+  border-radius: 0 6px 6px 0; max-width: 70ch;
+}
+blockquote p { margin: .3em 0; }
+hr { border: none; border-top: 1px solid var(--line); margin: 1.6em 0; }
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 14px; padding: 0; list-style: none; }
+.cards li {
+  border: 1px solid var(--line); border-radius: 8px; padding: 14px 16px;
+  background: #fff; max-width: none;
+}
+.cards a { font-weight: 700; text-decoration: none; font-family: Verdana, sans-serif; font-size: 14px; }
+.cards p { margin: 6px 0 0; font-size: 14px; color: var(--muted); }
+footer {
+  text-align: center; color: var(--muted); font-size: 12.5px;
+  font-family: Verdana, sans-serif; padding: 18px 24px 28px;
+}
+@media (max-width: 760px) {
+  .layout { flex-direction: column; }
+  nav.sidebar { width: auto; }
+}
+
+</style>
+</head>
+<body>
+<header class="site">
+<h1>Professional Portfolio With AI Help</h1>
+<p>A healthcare-education manual for nurses — never medical advice. By Asdale Dynamics, LLC.</p>
+</header>
+<div class="layout">
+<nav class="sidebar"><h2>Manual</h2><a href="index.html" >Home</a><a href="00-read-me-first.html">Read Me First</a><a href="01-phi-safety.html">PHI Safety</a><a href="02-competency-sheets.html">Competency Sheets</a><a href="03-ceu-summaries.html">CEU Summaries</a><a href="04-preceptor-feedback.html">Preceptor Feedback Language</a><a href="05-credential-tracker.html">Credential Tracker</a><a href="06-annual-review.html" class="active">Annual-Review Talking Points</a><a href="07-ai-prompt-library.html">AI Prompt Library</a><a href="08-templates.html">Templates</a></nav>
+<main><div class="banner">Educational content only — this manual teaches documentation, organization, and professional communication. It is never medical advice; your facility policy and state board always outrank it.</div><div class="phisidebar"><h2>Do not include PHI</h2><p style="margin:0 0 8px">Before any content goes into a portfolio file, note, or AI prompt:</p><ul><li><b>Never include patient identifiers</b> — Names, initials, MRNs, dates of birth, room/bed numbers.</li>
+<li><b>Watch for identifying combinations</b> — A rare procedure + a date + a unit can point at one specific patient.</li>
+<li><b>Use roles instead of names</b> — “my preceptor,” “charge nurse” — never “Jane R. on 4 West.”</li>
+<li><b>No screenshots or photos of work</b> — EHR screenshots and printed MARs violate privacy outright.</li>
+<li><b>No secrets, ever</b> — Logins, badge numbers, API keys stay out of files and prompts.</li></ul><p style="margin:8px 0 0">Full rules: <a href="01-phi-safety.html">PHI Safety</a>.</p></div><h1 id="annual-review-talking-points">Annual-Review Talking Points</h1>
+<p>Annual review season: the one hour a year where a portfolio matters most. This chapter turns your sanitized competency sheets, CEU log, feedback cards, and credential tracker into a short, confident, personal script — so you walk in prepared, not braced.</p>
+<blockquote><p><strong>Educational content only.</strong> Every facility runs its own review form, rating language, and compensation process. What's here is <em>prep material</em> — you bring the substance; HR brings the form.</p></blockquote>
+<h2 id="the-4-layer-structure">The 4-layer structure</h2>
+<p>A clear review pitch fits in four layers, 90 seconds each:</p>
+<ol><li><strong>Growth</strong> — one thing you got better at, with evidence.</li><li><strong>Contribution</strong> — one thing you did for the unit or team (not just assigned work).</li><li><strong>Learning</strong> — what you put into your own head this year (CEU categories here, not numerals).</li><li><strong>Next</strong> — one specific ask and one specific goal, calendar-grounded.</li></ol>
+<p>Keep it tight: four bullets, four sentences of spice, done. Restraint is what makes the powerful point — "this is a curated year, not a pile."</p>
+<h2 id="layer-by-layer-builder">Layer-by-layer builder</h2>
+<h3 id="layer-1--growth">Layer 1 — Growth</h3>
+<p>Straight from competency-sheet level-ups (<a href="02-competency-sheets.html">02-competency-sheets.md</a>):</p>
+<blockquote><p>"At review time last year I listed precepting students as a goal. This year I ran two shifts of student orientation under supervision, and my preceptor's notation on that moved to 'can teach.' "</p></blockquote>
+<p>Notice the shape: <em>goal → evidence → verified by a real record.</em> No patient story; no guesstimate.</p>
+<h3 id="layer-2--contribution">Layer 2 — Contribution</h3>
+<p>Sanitized team-level contributions (unit-level, not person-level):</p>
+<blockquote><p>"I rebuilt our shift-change report template and the unit adopted it; our audit showed noticeably fewer repeated follow-up calls at handoff."</p></blockquote>
+<p>Avoid "I covered for X when Y was on leave" phrasing if it names people. Say "covered extra shifts during Q2 vacation season" — same fact, zero names.</p>
+<h3 id="layer-3--learning">Layer 3 — Learning</h3>
+<p>Straight from CEU categories (<a href="03-ceu-summaries.html">03-ceu-summaries.md</a>):</p>
+<blockquote><p>"I focused my CEU on two categories this year: precepting (16 hrs) and informatics/EHR skills (8 hrs). The informatics hours helped me become our unit's go-to for the new documentation upgrade."</p></blockquote>
+<p>This is where the sanitized CEU log does the heavy lifting. Categories say <em>vacation-styled learning</em>; counts say <em>I track my own growth.</em></p>
+<h3 id="layer-4--next-the-ask">Layer 4 — Next (the ask)</h3>
+<p>One ask that needs a resource/decision, one goal that needs only you:</p>
+<blockquote><p>"Ask: two clinical days for the UGPIV course. Goal: finish UGPIV sign-off and take a charge-nurse rotation shift each quarter."</p></blockquote>
+<p>The goal should be something your credential tracker (<a href="05-credential-tracker.html">05-credential-tracker.md</a>) and CEU log can corroborate.</p>
+<h2 id="prompt-strategy-from-docs-to-script">Prompt strategy: from docs to script</h2>
+<p>The AI turns your sanitized material into a draft script. The prompts (all in <a href="07-ai-prompt-library.html#5-annual-review-prompts">07-ai-prompt-library.md</a>) take:</p>
+<ol><li>Your competency sheet updates (sanitized).</li><li>Your CEU category totals (from your own log).</li><li>Your feedback cards merged by theme (see <a href="04-preceptor-feedback.html">04-preceptor-feedback.md</a>).</li><li>Your single ask and single goal.</li></ol>
+<p>And return: a 4-layer script, a one-page "backup packet" (evidence table), and a kinder-sounding ask line. You verify — <em>especially the numbers</em> — and switch any sentence into your own voice.</p>
+<blockquote><p><strong>Rule:</strong> the script must sound like you talking to a manager you respect. If any sentence feels like borrowed management speak, rewrite–simplify.</p></blockquote>
+<h2 id="the-backup-packet-one-page--keep-it-in-a-folder">The backup packet (one page — keep it in a folder)</h2>
+<p>On one sheet (or one doc window) have ready, at most:</p>
+<table>
+<thead><tr>
+<th>Topic</th>
+<th>Evidence</th>
+</tr></thead>
+<tbody>
+<tr><td>Growth claim</td><td>Competency sheet(s), level-up note</td></tr>
+<tr><td>Contribution claim</td><td>Metric the unit audit showed, adopted template</td></tr>
+<tr><td>Learning claim</td><td>CEU log lines with totals</td></tr>
+<tr><td>Next goal</td><td>1 line, with date</td></tr>
+<tr><td>Credentials</td><td>Tracker rows (abbreviated)</td></tr>
+<tr><td>Feedback trend</td><td>3 bullets from preceptor feedback themes</td></tr>
+</tbody>
+</table>
+<p>This is the "I did my homework" table. Nobody reads it all — its existence changes the tone of the meeting.</p>
+<h2 id="anti-patterns">Anti-patterns</h2>
+<ul><li>Rehearsing to word-perfect. You want a <em>loaded rucksack</em>, not a speech.</li><li>Bringing patient stories as evidence. The sanitized metric beats the case.</li><li>Over-vowing. One ask, one goal, calendar-checked. Promising 6 things and doing 2 reads worse than promising 2 and doing 2.</li><li>Being shy with the ask. If you don't ask, everything you say becomes its justification — say the ask clearly.</li></ul>
+</main>
+</div>
+<footer>
+© 2026 Asdale Dynamics, LLC · Educational content, never medical advice ·
+CC0-style docs; site and code MIT licensed ·
+Built locally; no tracking, no network.
+</footer>
+</body>
+</html>

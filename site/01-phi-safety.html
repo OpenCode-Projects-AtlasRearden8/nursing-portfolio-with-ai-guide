@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Professional Portfolio With AI Help</title>
+<style>
+:root {
+  --ink: #1c2733; --muted: #5b6b7b; --line: #d9e1e8;
+  --accent: #0f6d5f; --accent-soft: #e8f3f1;
+  --warn: #9d3b12; --warn-bg: #fdf1e7; --warn-line: #e7b98f;
+  --code-bg: #f4f7f9;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; color: var(--ink);
+  font: 16px/1.6 Georgia, "Times New Roman", serif;
+  background: #fbfcfd;
+}
+.layout { display: flex; max-width: 1100px; margin: 0 auto; gap: 32px; padding: 24px; }
+main { flex: 1; min-width: 0; }
+nav.sidebar {
+  width: 220px; flex-shrink: 0;
+  font-family: Verdana, sans-serif; font-size: 13px;
+}
+nav.sidebar h2 {
+  font-size: 12px; letter-spacing: .08em; text-transform: uppercase;
+  color: var(--muted); margin: 0 0 8px;
+}
+nav.sidebar a {
+  display: block; padding: 5px 8px; border-radius: 4px;
+  color: var(--ink); text-decoration: none; margin-bottom: 2px;
+}
+nav.sidebar a:hover { background: var(--accent-soft); }
+nav.sidebar a.active { background: var(--accent); color: #fff; }
+.phisidebar {
+  background: var(--warn-bg); border: 1px solid var(--warn-line);
+  border-radius: 6px; padding: 14px 16px; margin: 0 0 20px;
+  font-family: Verdana, sans-serif; font-size: 13px;
+}
+.phisidebar h2 { margin: 0 0 8px; color: var(--warn); font-size: 14px; }
+.phisidebar ul { margin: 0; padding-left: 18px; }
+.phisidebar li { margin-bottom: 5px; }
+.phisidebar b { color: var(--warn); }
+.phisidebar a { color: var(--warn); }
+.banner {
+  background: var(--accent-soft); border-left: 4px solid var(--accent);
+  padding: 10px 14px; margin-bottom: 20px; border-radius: 0 6px 6px 0;
+  font-family: Verdana, sans-serif; font-size: 13px; color: var(--ink);
+}
+header.site { padding: 24px 24px 0; max-width: 1100px; margin: 0 auto; }
+header.site h1 { margin: 0; font-size: 26px; }
+header.site p { margin: 4px 0 12px; color: var(--muted); font-size: 14px; }
+h1, h2, h3, h4 { line-height: 1.25; font-weight: 700; }
+main h1 { font-size: 24px; margin-top: 8px; }
+main h2 { font-size: 19px; margin-top: 1.4em; border-bottom: 1px solid var(--line); padding-bottom: 3px; }
+main h3 { font-size: 16px; margin-top: 1.2em; }
+p, li { max-width: 70ch; }
+a { color: var(--accent); }
+code {
+  font-family: "SFMono-Regular", Consolas, monospace; font-size: .88em;
+  background: var(--code-bg); border: 1px solid var(--line);
+  border-radius: 3px; padding: 1px 4px;
+}
+pre {
+  background: var(--code-bg); border: 1px solid var(--line);
+  border-radius: 6px; padding: 12px 14px; overflow-x: auto;
+}
+pre code { background: none; border: none; padding: 0; }
+table { border-collapse: collapse; margin: 1em 0; font-size: 14px; max-width: 100%; display: block; overflow-x: auto; }
+th, td { border: 1px solid var(--line); padding: 6px 10px; text-align: left; vertical-align: top; }
+th { background: var(--accent-soft); font-family: Verdana, sans-serif; font-size: 12.5px; }
+blockquote {
+  margin: 1em 0; padding: 6px 14px; color: #3d4c5a;
+  border-left: 3px solid var(--accent); background: #f6faf9;
+  border-radius: 0 6px 6px 0; max-width: 70ch;
+}
+blockquote p { margin: .3em 0; }
+hr { border: none; border-top: 1px solid var(--line); margin: 1.6em 0; }
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 14px; padding: 0; list-style: none; }
+.cards li {
+  border: 1px solid var(--line); border-radius: 8px; padding: 14px 16px;
+  background: #fff; max-width: none;
+}
+.cards a { font-weight: 700; text-decoration: none; font-family: Verdana, sans-serif; font-size: 14px; }
+.cards p { margin: 6px 0 0; font-size: 14px; color: var(--muted); }
+footer {
+  text-align: center; color: var(--muted); font-size: 12.5px;
+  font-family: Verdana, sans-serif; padding: 18px 24px 28px;
+}
+@media (max-width: 760px) {
+  .layout { flex-direction: column; }
+  nav.sidebar { width: auto; }
+}
+
+</style>
+</head>
+<body>
+<header class="site">
+<h1>Professional Portfolio With AI Help</h1>
+<p>A healthcare-education manual for nurses — never medical advice. By Asdale Dynamics, LLC.</p>
+</header>
+<div class="layout">
+<nav class="sidebar"><h2>Manual</h2><a href="index.html" >Home</a><a href="00-read-me-first.html">Read Me First</a><a href="01-phi-safety.html" class="active">PHI Safety</a><a href="02-competency-sheets.html">Competency Sheets</a><a href="03-ceu-summaries.html">CEU Summaries</a><a href="04-preceptor-feedback.html">Preceptor Feedback Language</a><a href="05-credential-tracker.html">Credential Tracker</a><a href="06-annual-review.html">Annual-Review Talking Points</a><a href="07-ai-prompt-library.html">AI Prompt Library</a><a href="08-templates.html">Templates</a></nav>
+<main><div class="banner">Educational content only — this manual teaches documentation, organization, and professional communication. It is never medical advice; your facility policy and state board always outrank it.</div><div class="phisidebar"><h2>Do not include PHI</h2><p style="margin:0 0 8px">Before any content goes into a portfolio file, note, or AI prompt:</p><ul><li><b>Never include patient identifiers</b> — Names, initials, MRNs, dates of birth, room/bed numbers.</li>
+<li><b>Watch for identifying combinations</b> — A rare procedure + a date + a unit can point at one specific patient.</li>
+<li><b>Use roles instead of names</b> — “my preceptor,” “charge nurse” — never “Jane R. on 4 West.”</li>
+<li><b>No screenshots or photos of work</b> — EHR screenshots and printed MARs violate privacy outright.</li>
+<li><b>No secrets, ever</b> — Logins, badge numbers, API keys stay out of files and prompts.</li></ul><p style="margin:8px 0 0">Full rules: <a href="01-phi-safety.html">PHI Safety</a>.</p></div><h1 id="phi-safety-what-never-goes-in-your-portfolio">PHI Safety: What Never Goes In Your Portfolio</h1>
+<p>The <strong>do-not-include-PHI sidebar</strong>. This page is the safety gate for the whole manual. Read it before you touch your first competency sheet, CEU summary, or annual-review note — and re-scan it before you share anything with an AI tool, a preceptor, or a manager.</p>
+<blockquote><p><strong>Educational content only — never medical advice.</strong> This page is about <em>document hygiene</em>, not clinical care or HIPAA legal interpretation. Your facility's privacy policy is the authority; follow it wherever it is stricter than this page.</p></blockquote>
+<h2 id="the-phi-sidebar-copy-this-onto-your-monitor">The PHI Sidebar (copy this onto your monitor)</h2>
+<p><strong>DO NOT INCLUDE — in portfolio files, in AI prompts, in printed notes, anywhere:</strong></p>
+<table>
+<thead><tr>
+<th>Category</th>
+<th>Examples</th>
+<th>Why</th>
+</tr></thead>
+<tbody>
+<tr><td>Patient identifiers</td><td>Names, initials, MRN/record numbers, DOB, SSN</td><td>Direct PHI, 1:1 identifiers</td></tr>
+<tr><td>Room/bed/locale</td><td>"48-2, telemetry," "bed 12 in the PACU"</td><td>Identifiable in combination</td></tr>
+<tr><td>Specific dates+tell</td><td>"Tuesday night, post-op day 2" combined with procedure details</td><td>Re-identifies a person</td></tr>
+<tr><td>Coworker names</td><td>"Preceptor Jane R."</td><td>People are people; use roles</td></tr>
+<tr><td>Facility specifics that trace</td><td>"the only peds unit in town"</td><td>Triangulates who/where</td></tr>
+<tr><td>Images of work</td><td>EHR screenshots, badge photos, printed MAR/labels</td><td>HIPAA-per-se violation</td></tr>
+<tr><td>Your own excess IDs</td><td>SSN, home address, license number on drafts</td><td>Identity theft risk</td></tr>
+<tr><td>Secrets</td><td>Passwords, login codes, API keys to anything</td><td>Plain bad practice</td></tr>
+</tbody>
+</table>
+<p>The single most important word in the table is <strong>combination</strong>. A single detail (rare procedure, specific date, tiny unit) is usually harmless. Two or three combined can point at exactly one human being. When sanitizing, it is almost never one field you remove — it is the <em>overlap</em> between fields.</p>
+<h2 id="pre-flight-sanitization-checklist">Pre-flight sanitization checklist</h2>
+<p>Run your entry through these before it goes into a prompt, a portfolio file, or a review folder:</p>
+<ol><li><strong>Names gone?</strong> No patient/coworker/facility names you don't need. Say "a long-term ICU patient," "my preceptor," "my mid-size community hospital."</li><li><strong>Dates generalized?</strong> "A winter night shift" instead of "Jan 14." Exact dates are fine for <em>your own</em> CEU certificates and renewals — that's your record, not a patient's story.</li><li><strong>Numbers depersonalized?</strong> Room numbers out. Counts about <em>you</em> are fine ("I did 40 IV starts across the year"); counts about <em>a patient</em> are not.</li><li><strong>Combination test?</strong> Could a coworker recognize which patient this is? If yes, blur one more axis: the procedure, the date, the unit, or the outcome.</li><li><strong>Images stripped?</strong> No screenshots or photos unless fully synthetic (your own mock table).</li><li><strong>AI-prompt-safety double-check?</strong> Prompts only ever carry <em>sanitized, already-blurred</em> summaries. If you can't sanitize it, you can't prompt it.</li></ol>
+<h2 id="worked-example-sanitizing-an-anecdote">Worked example: sanitizing an anecdote</h2>
+<p><strong>Before (do not use):</strong></p>
+<blockquote><p>On Tuesday night I had R.T., MRN 44718—, a 68-year-old in room 12 who went for a Whipple that afternoon, and at 0200 his Jackson-Pratt drained over 200 mL of blood; Dr. Mati came and we packed him, and my preceptor Kay coached me through hanging 4 units.</p></blockquote>
+<p><strong>After (sanitized, portfolio-safe):</strong></p>
+<blockquote><p>During a night shift, I cared for a postoperative patient whose surgical drain output changed suddenly. I notified the provider, supported fluid resuscitation per protocol, and my preceptor coached me through IV push medications I had not previously administered. What I took from it: report drain output changes early; a calm, scripted SBAR gets a faster response.</p></blockquote>
+<p>Notice what survived: the <em>skill</em>, the <em>setting level</em>, the <em>lesson</em>. What got removed: the person, the date, the room, the colleague, the institution.</p>
+<p><strong>Test to apply:</strong> if the before-version makes you think "oh, that was Mr. —" you are done sanitizing; the after-version is what belongs in the portfolio.</p>
+<h2 id="how-this-maps-to-the-rest-of-the-manual">How this maps to the rest of the manual</h2>
+<ul><li><strong>Competency sheets</strong> (<a href="02-competency-sheets.html">02</a>) — describe the skill, never the patient who taught you it.</li><li><strong>CEU summaries</strong> (<a href="03-ceu-summaries.html">03</a>) — CEU records are about <em>you</em>; they almost never touch PHI at all.</li><li><strong>Preceptor feedback</strong> (<a href="04-preceptor-feedback.html">04</a>) — feedback talks about your practice, not cases; store learned lessons, not story details.</li><li><strong>Annual review</strong> (<a href="06-annual-review.html">06</a>) — talking points come from the same sanitized set; you'll never need a patient story to sound competent.</li></ul>
+<h2 id="the-one-line-rule">The one-line rule</h2>
+<blockquote><p><strong>If it would be awkward to explain to a privacy officer, don't put it in the portfolio — and definitely don't paste it into a chat window.</strong></p></blockquote>
+</main>
+</div>
+<footer>
+© 2026 Asdale Dynamics, LLC · Educational content, never medical advice ·
+CC0-style docs; site and code MIT licensed ·
+Built locally; no tracking, no network.
+</footer>
+</body>
+</html>

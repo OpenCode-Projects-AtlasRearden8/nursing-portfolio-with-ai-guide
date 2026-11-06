@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Professional Portfolio With AI Help</title>
+<style>
+:root {
+  --ink: #1c2733; --muted: #5b6b7b; --line: #d9e1e8;
+  --accent: #0f6d5f; --accent-soft: #e8f3f1;
+  --warn: #9d3b12; --warn-bg: #fdf1e7; --warn-line: #e7b98f;
+  --code-bg: #f4f7f9;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; color: var(--ink);
+  font: 16px/1.6 Georgia, "Times New Roman", serif;
+  background: #fbfcfd;
+}
+.layout { display: flex; max-width: 1100px; margin: 0 auto; gap: 32px; padding: 24px; }
+main { flex: 1; min-width: 0; }
+nav.sidebar {
+  width: 220px; flex-shrink: 0;
+  font-family: Verdana, sans-serif; font-size: 13px;
+}
+nav.sidebar h2 {
+  font-size: 12px; letter-spacing: .08em; text-transform: uppercase;
+  color: var(--muted); margin: 0 0 8px;
+}
+nav.sidebar a {
+  display: block; padding: 5px 8px; border-radius: 4px;
+  color: var(--ink); text-decoration: none; margin-bottom: 2px;
+}
+nav.sidebar a:hover { background: var(--accent-soft); }
+nav.sidebar a.active { background: var(--accent); color: #fff; }
+.phisidebar {
+  background: var(--warn-bg); border: 1px solid var(--warn-line);
+  border-radius: 6px; padding: 14px 16px; margin: 0 0 20px;
+  font-family: Verdana, sans-serif; font-size: 13px;
+}
+.phisidebar h2 { margin: 0 0 8px; color: var(--warn); font-size: 14px; }
+.phisidebar ul { margin: 0; padding-left: 18px; }
+.phisidebar li { margin-bottom: 5px; }
+.phisidebar b { color: var(--warn); }
+.phisidebar a { color: var(--warn); }
+.banner {
+  background: var(--accent-soft); border-left: 4px solid var(--accent);
+  padding: 10px 14px; margin-bottom: 20px; border-radius: 0 6px 6px 0;
+  font-family: Verdana, sans-serif; font-size: 13px; color: var(--ink);
+}
+header.site { padding: 24px 24px 0; max-width: 1100px; margin: 0 auto; }
+header.site h1 { margin: 0; font-size: 26px; }
+header.site p { margin: 4px 0 12px; color: var(--muted); font-size: 14px; }
+h1, h2, h3, h4 { line-height: 1.25; font-weight: 700; }
+main h1 { font-size: 24px; margin-top: 8px; }
+main h2 { font-size: 19px; margin-top: 1.4em; border-bottom: 1px solid var(--line); padding-bottom: 3px; }
+main h3 { font-size: 16px; margin-top: 1.2em; }
+p, li { max-width: 70ch; }
+a { color: var(--accent); }
+code {
+  font-family: "SFMono-Regular", Consolas, monospace; font-size: .88em;
+  background: var(--code-bg); border: 1px solid var(--line);
+  border-radius: 3px; padding: 1px 4px;
+}
+pre {
+  background: var(--code-bg); border: 1px solid var(--line);
+  border-radius: 6px; padding: 12px 14px; overflow-x: auto;
+}
+pre code { background: none; border: none; padding: 0; }
+table { border-collapse: collapse; margin: 1em 0; font-size: 14px; max-width: 100%; display: block; overflow-x: auto; }
+th, td { border: 1px solid var(--line); padding: 6px 10px; text-align: left; vertical-align: top; }
+th { background: var(--accent-soft); font-family: Verdana, sans-serif; font-size: 12.5px; }
+blockquote {
+  margin: 1em 0; padding: 6px 14px; color: #3d4c5a;
+  border-left: 3px solid var(--accent); background: #f6faf9;
+  border-radius: 0 6px 6px 0; max-width: 70ch;
+}
+blockquote p { margin: .3em 0; }
+hr { border: none; border-top: 1px solid var(--line); margin: 1.6em 0; }
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 14px; padding: 0; list-style: none; }
+.cards li {
+  border: 1px solid var(--line); border-radius: 8px; padding: 14px 16px;
+  background: #fff; max-width: none;
+}
+.cards a { font-weight: 700; text-decoration: none; font-family: Verdana, sans-serif; font-size: 14px; }
+.cards p { margin: 6px 0 0; font-size: 14px; color: var(--muted); }
+footer {
+  text-align: center; color: var(--muted); font-size: 12.5px;
+  font-family: Verdana, sans-serif; padding: 18px 24px 28px;
+}
+@media (max-width: 760px) {
+  .layout { flex-direction: column; }
+  nav.sidebar { width: auto; }
+}
+
+</style>
+</head>
+<body>
+<header class="site">
+<h1>Professional Portfolio With AI Help</h1>
+<p>A healthcare-education manual for nurses — never medical advice. By Asdale Dynamics, LLC.</p>
+</header>
+<div class="layout">
+<nav class="sidebar"><h2>Manual</h2><a href="index.html" class="active">Home</a><a href="00-read-me-first.html">Read Me First</a><a href="01-phi-safety.html">PHI Safety</a><a href="02-competency-sheets.html">Competency Sheets</a><a href="03-ceu-summaries.html">CEU Summaries</a><a href="04-preceptor-feedback.html">Preceptor Feedback Language</a><a href="05-credential-tracker.html">Credential Tracker</a><a href="06-annual-review.html">Annual-Review Talking Points</a><a href="07-ai-prompt-library.html">AI Prompt Library</a><a href="08-templates.html">Templates</a></nav>
+<main><div class="banner">Educational content only — this manual teaches documentation, organization, and professional communication. It is never medical advice; your facility policy and state board always outrank it.</div><div class="phisidebar"><h2>Do not include PHI</h2><p style="margin:0 0 8px">Before any content goes into a portfolio file, note, or AI prompt:</p><ul><li><b>Never include patient identifiers</b> — Names, initials, MRNs, dates of birth, room/bed numbers.</li>
+<li><b>Watch for identifying combinations</b> — A rare procedure + a date + a unit can point at one specific patient.</li>
+<li><b>Use roles instead of names</b> — “my preceptor,” “charge nurse” — never “Jane R. on 4 West.”</li>
+<li><b>No screenshots or photos of work</b> — EHR screenshots and printed MARs violate privacy outright.</li>
+<li><b>No secrets, ever</b> — Logins, badge numbers, API keys stay out of files and prompts.</li></ul><p style="margin:8px 0 0">Full rules: <a href="01-phi-safety.html">PHI Safety</a>.</p></div><h1>Professional Portfolio With AI Help</h1><section><h2>The three rules of this manual</h2><ol><li><strong>Never put PHI in your portfolio, notes, or AI prompts.</strong> See <a href="01-phi-safety.html">PHI Safety</a>.</li><li><strong>Your portfolio describes you, not a patient.</strong> If it reads oddly out loud in a hallway, rewrite it.</li><li><strong>AI drafts, you verify.</strong> Certificates, check-off sheets, and your state board are the sources of truth.</li></ol><h2>Chapters</h2><ul class="cards"><li><a href="00-read-me-first.html">Read Me First</a><p>What this manual builds, and the three rules that guard it.</p></li>
+<li><a href="01-phi-safety.html">PHI Safety</a><p>The do-not-include-PHI sidebar: what never goes in your portfolio.</p></li>
+<li><a href="02-competency-sheets.html">Competency Sheets</a><p>One-page, sanitized records of each skill you can do.</p></li>
+<li><a href="03-ceu-summaries.html">CEU Summaries</a><p>Five-field cards plus a rolling log that make courses retrievable.</p></li>
+<li><a href="04-preceptor-feedback.html">Preceptor Feedback Language</a><p>Asking for, recording, and summarizing preceptor feedback.</p></li>
+<li><a href="05-credential-tracker.html">Credential Tracker</a><p>One dashboard of every license and certification renewal.</p></li>
+<li><a href="06-annual-review.html">Annual-Review Talking Points</a><p>Turn your sanitized records into a four-layer review script.</p></li>
+<li><a href="07-ai-prompt-library.html">AI Prompt Library</a><p>Copy-paste, sanitizer-safe prompts for every chapter.</p></li>
+<li><a href="08-templates.html">Templates</a><p>Blank fill-in versions of everything, ready to copy.</p></li></ul></section>
+<section><h2>Start here</h2><table>
+<thead><tr>
+<th>Portfolio piece</th>
+<th>Doc</th>
+<th>What it's for</th>
+</tr></thead>
+<tbody>
+<tr><td>PHI safety checklist</td><td><a href="01-phi-safety.html">01-phi-safety.md</a></td><td>Sanitizing everything before it goes anywhere</td></tr>
+<tr><td>Competency sheets</td><td><a href="02-competency-sheets.html">02-competency-sheets.md</a></td><td>Documenting skills and check-offs</td></tr>
+<tr><td>CEU summaries</td><td><a href="03-ceu-summaries.html">03-ceu-summaries.md</a></td><td>Turning continuing education into organized, review-ready records</td></tr>
+<tr><td>Preceptor feedback language</td><td><a href="04-preceptor-feedback.html">04-preceptor-feedback.md</a></td><td>Asking for, recording, and summarizing feedback</td></tr>
+<tr><td>Credential tracker</td><td><a href="05-credential-tracker.html">05-credential-tracker.md</a></td><td>License/cert renewal dates at a glance</td></tr>
+<tr><td>Annual-review talking points</td><td><a href="06-annual-review.html">06-annual-review.md</a></td><td>Walking into your review prepared, not panicked</td></tr>
+<tr><td>AI prompt library</td><td><a href="07-ai-prompt-library.html">07-ai-prompt-library.md</a></td><td>Copy-paste prompts for every step above</td></tr>
+<tr><td>Fill-in templates</td><td><a href="08-templates.html">08-templates.md</a></td><td>Blank versions of everything, ready to use</td></tr>
+</tbody>
+</table></section>
+</main>
+</div>
+<footer>
+© 2026 Asdale Dynamics, LLC · Educational content, never medical advice ·
+CC0-style docs; site and code MIT licensed ·
+Built locally; no tracking, no network.
+</footer>
+</body>
+</html>
