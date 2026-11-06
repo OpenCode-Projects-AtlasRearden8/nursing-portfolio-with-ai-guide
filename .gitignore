@@ -1,12 +1,16 @@
-# Python
-__pycache__/
-*.pyc
-
-# OS noise
-.DS_Store
-Thumbs.db
 
 # Local personal portfolio data (never commit real records)
+# OS noise
+# Python
 *.gpg
-portfolio-private/
+*.pyc
+.DS_Store
+.env
+.env.*
+.venv/
+Thumbs.db
+__pycache__/
 _filled-templates/
+dist/*.tmp
+node_modules/
+portfolio-private/
